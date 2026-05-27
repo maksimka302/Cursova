@@ -475,3 +475,173 @@ html{
     width:50px;
     height:auto;
 }
+
+
+
+
+/* =========================
+   АДАПТИВНІСТЬ
+========================= */
+
+/* Планшети */
+@media (max-width: 992px){
+
+    .header__inner{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .cards{
+        flex-direction:column;
+    }
+
+    .news{
+        flex-direction:column;
+    }
+
+    .news__card{
+        width:100%;
+    }
+
+    .footer-content{
+        flex-direction:column;
+        gap:30px;
+    }
+
+    .project-page{
+        flex-direction:column;
+    }
+
+    .project-page__img{
+        width:100%;
+    }
+
+}
+
+
+/* Телефони */
+@media (max-width: 768px){
+
+    .page{
+        margin:0;
+        border-radius:0;
+    }
+
+    .container{
+        padding:0 15px;
+    }
+
+    .header{
+        padding:10px 0;
+    }
+
+    .header__inner{
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+    }
+
+    .logo{
+        justify-content:center;
+    }
+
+    .nav{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:12px;
+    }
+
+    .nav__link{
+        font-size:13px;
+    }
+
+    .hero{
+        height:220px;
+        margin:0 10px;
+    }
+
+    .hero__title{
+        font-size:28px;
+    }
+
+    .hero__text{
+        font-size:13px;
+    }
+
+    .features{
+        flex-direction:column;
+    }
+
+    .cards{
+        flex-direction:column;
+    }
+
+    .card img{
+        height:180px;
+    }
+
+    .news{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .news__card{
+        width:100%;
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .news__card img{
+        width:100%;
+        height:180px;
+    }
+
+    .footer-content{
+        flex-direction:column;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
+
+    .modal-content{
+        width:90%;
+        padding:20px;
+    }
+
+    .feedback input,
+    .feedback .btn{
+        width:100%;
+    }
+
+}
+
+
+/* Маленькі телефони */
+@media (max-width: 480px){
+
+    .hero__title{
+        font-size:24px;
+    }
+
+    .section__title{
+        font-size:24px;
+    }
+
+    .logo__black,
+    .logo__green{
+        font-size:16px;
+    }
+
+    .btn{
+        width:100%;
+    }
+
+}
